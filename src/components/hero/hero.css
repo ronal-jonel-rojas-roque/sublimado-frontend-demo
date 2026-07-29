@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
+
+.hero-title {
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  font-size: clamp(6rem, 16vw, 18rem);
+  font-weight: 900;
+  letter-spacing: .15em;
+  background-image: url("/src/assets/animados/fond.avif");
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  user-select: none;
+  line-height: 1; 
+  color: transparent;
+  animation: shine 8s linear infinite; 
+  background-clip: text;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+
+}

@@ -1,0 +1,172 @@
+.footerContainer {
+    position: relative;
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+    padding: 3rem 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Animations */
+@keyframes parralax {
+    0% {
+        background-position: 260px;
+    }
+
+    100% {
+        background-position: -10000vw;
+    }
+}
+
+@keyframes moto {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    5% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    25% {
+        transform: translateY(60px) rotate(-20deg);
+    }
+
+    49% {
+        transform: translateY(0) rotate(-1deg);
+    }
+
+    51% {
+        transform: translateY(0) rotate(1deg);
+    }
+
+    75% {
+        transform: translateY(60px) rotate(20deg);
+    }
+
+    80% {
+        transform: translateY(60px) rotate(0deg);
+    }
+}
+
+@keyframes voiture {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+.parallaxLayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bgLayer {
+    position: absolute;
+    inset: 0;
+    background-repeat: repeat-x;
+    background-position-y: 100% !important;
+    animation: parralax 600s linear infinite;
+}
+
+.moto {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -250px;
+    height: 200px;
+    width: 150px;
+    background: url(https://i.ibb.co/JCGfFJd/moto-net.gif) no-repeat;
+    transform-origin: 50% 80%;
+    animation: moto 5s linear infinite;
+}
+
+.voiture {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: 250px;
+    height: 114px;
+    width: 206px;
+    background: url(https://i.ibb.co/0Qhp4DN/voiture-fumee.gif) no-repeat;
+    animation: voiture 1s linear infinite;
+}
+
+.moto {
+    left: 20%;
+    transform: translateX(-50%);
+    margin-left: 0;
+}
+
+.voiture {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 768px) {
+
+    .footerContainer {
+        min-height: 100vh;
+        padding: 1rem 0;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+
+
+    .parallaxLayer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 250px;
+    }
+
+    .moto,
+    .voiture {
+        transform: scale(0.6);
+    }
+
+    .moto {
+        margin-left: 0;
+        left: 20%;
+    }
+
+    .voiture {
+        margin-left: 0;
+        left: 60%;
+    }
+
+    @keyframes parralax {
+        0% {
+            background-position: 100px;
+        }
+
+        100% {
+            background-position: -40000vw;
+        }
+    }
+}
