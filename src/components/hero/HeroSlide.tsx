@@ -16,14 +16,14 @@ export default function HeroSlide() {
                 <div className="flex flex-col gap-4 md:grid md:grid-cols-2 lg:flex lg:flex-col">
                     <div className="flex-1 bg-gray-200 rounded-2xl overflow-hidden aspect-[16/9] md:aspect-auto">
                         <img
-                            src="/banners/banner1.jpg"
+                           src={`${import.meta.env.BASE_URL}banners/banner1.jpg`}
                             className="w-full h-full object-cover object-center"
                             alt="Oferta 1"
                         />
                     </div>
                     <div className="flex-1 bg-gray-200 rounded-2xl overflow-hidden min-h-[200px]">
                         <img
-                            src="/banners/banner2.jpg"
+                            src={`${import.meta.env.BASE_URL}banners/banner2.jpg`}
                             className="w-full h-full object-cover object-center"
                             alt="Oferta 2"
                         />
