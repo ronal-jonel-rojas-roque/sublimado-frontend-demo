@@ -1,1 +1,0 @@
-import{i as e}from"./engine-3d-CFMFSqKM.js";import{_ as t}from"./vendor-react-DFhFUcfp.js";import{t as n}from"./useAuth-DjoAx1jn.js";var r=e(),i=({children:e,allowedRole:i})=>{let{token:a,role:o}=n();return!a||o!==i?(0,r.jsx)(t,{to:`/login`,replace:!0}):e};export{i as default};
