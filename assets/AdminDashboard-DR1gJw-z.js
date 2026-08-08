@@ -1,0 +1,1 @@
+import{i as e}from"./engine-3d-CFMFSqKM.js";var t=e(),n=()=>(0,t.jsx)(`div`,{className:`min-h-screen bg-primary flex items-center justify-center`,children:(0,t.jsx)(`h1`,{className:`text-4xl font-heading text-accent`,children:`Panel de Administración`})});export{n as default};
