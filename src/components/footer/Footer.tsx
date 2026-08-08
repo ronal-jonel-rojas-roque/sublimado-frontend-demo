@@ -5,7 +5,7 @@ import { CiShare2 } from 'react-icons/ci';
 import { FacebookIcon, InstagramIcon, SendIcon, YoutubeIcon } from 'lucide-animated';
 import styles from './Footer.module.css';
 import { BsWhatsapp } from 'react-icons/bs';
-import { Link } from 'react-router-dom'; // 🌟 1. Importar Link de router
+import { Link } from 'react-router-dom'; //
 
 export const Footer = () => {
   return (

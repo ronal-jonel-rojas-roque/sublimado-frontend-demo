@@ -8,7 +8,7 @@ import ProductPrice from "./card/ProductPrice";
 import ProductRating from "./card/ProductRating";
 import { HeartHandshakeIcon, HeartIcon } from "lucide-animated";
 import { useCart } from "../context/CartContext";
-import { useWishlist } from "../context/WishlistContext"; // 🌟 1. Importar el hook de wishlist
+import { useWishlist } from "../context/WishlistContext"; // 
 
 interface ProductCardProps {
   product: Product;
@@ -34,13 +34,12 @@ export default function ProductCard({
   };
 
   const handleWishlist = () => {
-    // Estructura del item adaptada a tu WishlistContext
     const wishItem = {
       id: String(product.id),
       name: product.title,
       price: product.price,
       image: product.thumbnail,
-      category: product.category || "General", // Ajusta según tu tipo Product
+      category: product.category || "General",
     };
 
     if (isWishlisted) {
